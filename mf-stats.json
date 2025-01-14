@@ -1,0 +1,124 @@
+{
+  "id": "host",
+  "name": "host",
+  "metaData": {
+    "name": "host",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "0.0.0",
+      "buildName": "@remix-module-federation/source"
+    },
+    "remoteEntry": {
+      "name": "",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "",
+      "api": ""
+    },
+    "globalName": "host",
+    "pluginVersion": "0.7.6",
+    "publicPath": "auto"
+  },
+  "shared": [
+    {
+      "singleton": true,
+      "requiredVersion": "18.3.1",
+      "shareScope": "default",
+      "strictVersion": true,
+      "name": "react-dom",
+      "version": "18.3.1",
+      "eager": false,
+      "id": "host:react-dom",
+      "assets": {
+        "js": {
+          "async": [
+            "744.e4a2aaa431cdad95.js"
+          ],
+          "sync": [
+            "89.4c729c8c2e8274da.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "6.11.2",
+      "shareScope": "default",
+      "strictVersion": true,
+      "name": "react-router-dom",
+      "version": "6.11.2",
+      "eager": false,
+      "id": "host:react-router-dom",
+      "assets": {
+        "js": {
+          "async": [
+            "744.e4a2aaa431cdad95.js"
+          ],
+          "sync": [
+            "212.edfd039a5b8817ea.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    },
+    {
+      "singleton": true,
+      "requiredVersion": "18.3.1",
+      "shareScope": "default",
+      "strictVersion": true,
+      "name": "react",
+      "version": "18.3.1",
+      "eager": false,
+      "id": "host:react",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "744.e4a2aaa431cdad95.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": []
+    }
+  ],
+  "remotes": [
+    {
+      "alias": "remote1",
+      "consumingFederationContainerName": "host",
+      "federationContainerName": "remote1",
+      "moduleName": "Module",
+      "usedIn": [
+        "src/bootstrap.tsx + 3 modules"
+      ],
+      "entry": "https://ITZSHOAIB.github.io/remix-module-federation/remote1/remoteEntry.js"
+    },
+    {
+      "alias": "remote2",
+      "consumingFederationContainerName": "host",
+      "federationContainerName": "remote1",
+      "moduleName": "Module",
+      "usedIn": [
+        "src/bootstrap.tsx + 3 modules"
+      ],
+      "entry": "https://ITZSHOAIB.github.io/remix-module-federation/remote2/remoteEntry.js"
+    }
+  ],
+  "exposes": []
+}
