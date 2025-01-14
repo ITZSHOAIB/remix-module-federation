@@ -1,96 +1,78 @@
-# RemixModuleFederation
+# 🚀 Remix Module Federation Example
 
-<a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
+This Nx monorepo is an example of Module Federation using Remix and RSPack in an Nx monorepo. The host app consumes two different remote apps called remote1 and remote2.
 
-✨ Your new, shiny [Nx workspace](https://nx.dev) is ready ✨.
+## 📚 Table of Contents
 
-[Learn more about this workspace setup and its capabilities](https://nx.dev/getting-started/intro#learn-nx?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects) or run `npx nx graph` to visually explore what was created. Now, let's get you up to speed!
+- [Introduction](#introduction)
+- [Module Federation](#module-federation)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+  - [Hot Reload for Remotes](#hot-reload-for-remotes)
+  - [Verifying Module Federation](#verifying-module-federation)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Run tasks
+## 🌟 Introduction
 
-To run tasks with Nx use:
+This repository demonstrates how to set up and use Module Federation with Remix and RSPack in an Nx monorepo. The host application dynamically loads and integrates modules from two remote applications, remote1 and remote2.
 
-```sh
-npx nx <target> <project-name>
-```
+## 🧩 Module Federation
 
-For example:
+[Module Federation](https://webpack.js.org/concepts/module-federation/) is a feature of Webpack 5 that allows multiple independent builds to form a single application. Each build can expose and consume modules from other builds at runtime. This enables micro-frontends architecture, where different parts of an application can be developed and deployed independently.
 
-```sh
-npx nx build myproject
-```
+## 🚀 Getting Started
 
-These targets are either [inferred automatically](https://nx.dev/concepts/inferred-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) or defined in the `project.json` or `package.json` files.
+### ✅ Prerequisites
 
-[More about running tasks in the docs &raquo;](https://nx.dev/features/run-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+Ensure you have the following installed on your machine:
 
-## Add new projects
+- [Node.js](https://nodejs.org/) (>= 20.x)
+- [Yarn](https://classic.yarnpkg.com/en/docs/install) (>= 1.22.x)
 
-While you could add new projects to your workspace manually, you might want to leverage [Nx plugins](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) and their [code generation](https://nx.dev/features/generate-code?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) feature.
+### 📦 Installation
 
-To install a new plugin you can use the `nx add` command. Here's an example of adding the React plugin:
-```sh
-npx nx add @nx/react
-```
+1. Fork and Clone the Repository
+2. Install Dependencies
 
-Use the plugin's generator to create new projects. For example, to create a new React app or library:
+### ▶️ Running the Application
 
-```sh
-# Generate an app
-npx nx g @nx/react:app demo
-
-# Generate a library
-npx nx g @nx/react:lib some-lib
-```
-
-You can use `npx nx list` to get a list of installed plugins. Then, run `npx nx list <plugin-name>` to learn about more specific capabilities of a particular plugin. Alternatively, [install Nx Console](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) to browse plugins and generators in your IDE.
-
-[Learn more about Nx plugins &raquo;](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) | [Browse the plugin registry &raquo;](https://nx.dev/plugin-registry?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-## Set up CI!
-
-### Step 1
-
-To connect to Nx Cloud, run the following command:
+To run the host application:
 
 ```sh
-npx nx connect
+yarn nx serve host
 ```
 
-Connecting to Nx Cloud ensures a [fast and scalable CI](https://nx.dev/ci/intro/why-nx-cloud?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects) pipeline. It includes features such as:
+### 🔄 Hot Reload for Remotes
 
-- [Remote caching](https://nx.dev/ci/features/remote-cache?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Task distribution across multiple machines](https://nx.dev/ci/features/distribute-task-execution?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Automated e2e test splitting](https://nx.dev/ci/features/split-e2e-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Task flakiness detection and rerunning](https://nx.dev/ci/features/flaky-tasks?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-
-### Step 2
-
-Use the following command to configure a CI workflow for your workspace:
+To enable hot reload for the remote applications:
 
 ```sh
-npx nx g ci-workflow
+yarn nx serve host --devRemotes="remote1,remote2"
 ```
 
-[Learn more about Nx on CI](https://nx.dev/ci/intro/ci-with-nx#ready-get-started-with-your-provider?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+### 🔍 Verifying Module Federation
 
-## Install Nx Console
+To verify that Module Federation is working correctly, follow these steps:
 
-Nx Console is an editor extension that enriches your developer experience. It lets you run tasks, generate code, and improves code autocompletion in your IDE. It is available for VSCode and IntelliJ.
+1. Fork and Clone the Repository
+2. Install Dependencies
+3. Run the Host Application
+4. Make Changes to a Remote Application
 
-[Install Nx Console &raquo;](https://nx.dev/getting-started/editor-setup?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+Open any file in remote1 or remote2, make some changes, and save the file. For example, you can modify `Remote1.tsx`.
 
-## Useful links
+6. Build the Remote Application
+7. Verify Changes in the Host Application
 
-Learn more:
+The host application should automatically pull the changes from the remote application without needing a restart. This demonstrates the dynamic nature of Module Federation, where the host application can consume updates from remote applications at runtime.
 
-- [Learn more about this workspace setup](https://nx.dev/getting-started/intro#learn-nx?utm_source=nx_project&amp;utm_medium=readme&amp;utm_campaign=nx_projects)
-- [Learn about Nx on CI](https://nx.dev/ci/intro/ci-with-nx?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [Releasing Packages with Nx release](https://nx.dev/features/manage-releases?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
-- [What are Nx plugins?](https://nx.dev/concepts/nx-plugins?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+## 🤝 Contributing
 
-And join the Nx community:
-- [Discord](https://go.nx.dev/community)
-- [Follow us on X](https://twitter.com/nxdevtools) or [LinkedIn](https://www.linkedin.com/company/nrwl)
-- [Our Youtube channel](https://www.youtube.com/@nxdevtools)
-- [Our blog](https://nx.dev/blog?utm_source=nx_project&utm_medium=readme&utm_campaign=nx_projects)
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
