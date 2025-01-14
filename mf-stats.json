@@ -1,8 +1,8 @@
 {
-  "id": "remote1",
-  "name": "remote1",
+  "id": "remote2",
+  "name": "remote2",
   "metaData": {
-    "name": "remote1",
+    "name": "remote2",
     "type": "app",
     "buildInfo": {
       "buildVersion": "0.0.0",
@@ -19,7 +19,7 @@
       "zip": "",
       "api": ""
     },
-    "globalName": "remote1",
+    "globalName": "remote2",
     "pluginVersion": "0.7.6",
     "publicPath": "auto"
   },
@@ -32,14 +32,14 @@
       "name": "framer-motion",
       "version": "11.18.0",
       "eager": false,
-      "id": "remote1:framer-motion",
+      "id": "remote2:framer-motion",
       "assets": {
         "js": {
           "async": [
-            "744.5c9b6e2d4b42c940.js"
+            "744.5aa00c5439d4f18d.js"
           ],
           "sync": [
-            "22.f173946ece6af45b.js"
+            "22.1fa151482a9c6ef4.js"
           ]
         },
         "css": {
@@ -59,14 +59,14 @@
       "name": "react-dom",
       "version": "18.3.1",
       "eager": false,
-      "id": "remote1:react-dom",
+      "id": "remote2:react-dom",
       "assets": {
         "js": {
           "async": [
-            "744.5c9b6e2d4b42c940.js"
+            "744.5aa00c5439d4f18d.js"
           ],
           "sync": [
-            "89.db52d3576422a055.js"
+            "89.e059802a4fcdb94a.js"
           ]
         },
         "css": {
@@ -84,12 +84,12 @@
       "name": "react",
       "version": "18.3.1",
       "eager": false,
-      "id": "remote1:react",
+      "id": "remote2:react",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "744.5c9b6e2d4b42c940.js"
+            "744.5aa00c5439d4f18d.js"
           ]
         },
         "css": {
@@ -106,7 +106,7 @@
   "exposes": [
     {
       "path": "./Module",
-      "id": "remote1:Module",
+      "id": "remote2:Module",
       "name": "Module",
       "requires": [
         "react",
@@ -116,15 +116,17 @@
       "assets": {
         "js": {
           "sync": [
-            "__federation_expose_Module.45580c89adf6f1a3.js"
+            "__federation_expose_Module.6b8d49c2b9ee52ea.js"
           ],
           "async": [
-            "744.5c9b6e2d4b42c940.js",
-            "22.f173946ece6af45b.js"
+            "744.5aa00c5439d4f18d.js",
+            "22.1fa151482a9c6ef4.js"
           ]
         },
         "css": {
-          "sync": [],
+          "sync": [
+            "__federation_expose_Module.css"
+          ],
           "async": []
         }
       }
