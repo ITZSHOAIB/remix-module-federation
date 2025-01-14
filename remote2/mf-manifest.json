@@ -21,7 +21,7 @@
     },
     "globalName": "remote2",
     "pluginVersion": "0.7.6",
-    "publicPath": "https://ITZSHOAIB.github.io/remix-module-federation/remote2",
+    "publicPath": "https://ITZSHOAIB.github.io/remix-module-federation/remote2/",
     "prefetchInterface": false
   },
   "shared": [
