@@ -34,10 +34,10 @@
       "assets": {
         "js": {
           "async": [
-            "vendors-node_modules_react_index_js.4c94149e61e1a736.js"
+            "744.5c9b6e2d4b42c940.js"
           ],
           "sync": [
-            "vendors-node_modules_framer-motion_dist_es_index_mjs.f7b3d81c526964af.js"
+            "22.f173946ece6af45b.js"
           ]
         },
         "css": {
@@ -55,10 +55,10 @@
       "assets": {
         "js": {
           "async": [
-            "vendors-node_modules_react_index_js.4c94149e61e1a736.js"
+            "744.5c9b6e2d4b42c940.js"
           ],
           "sync": [
-            "vendors-node_modules_react-dom_index_js.d472de2323649c54.js"
+            "89.db52d3576422a055.js"
           ]
         },
         "css": {
@@ -77,7 +77,7 @@
         "js": {
           "async": [],
           "sync": [
-            "vendors-node_modules_react_index_js.4c94149e61e1a736.js"
+            "744.5c9b6e2d4b42c940.js"
           ]
         },
         "css": {
@@ -95,12 +95,11 @@
       "assets": {
         "js": {
           "sync": [
-            "vendors-node_modules_react_jsx-dev-runtime_js.b577e23d7a4fae1a.js",
-            "__federation_expose_Module.6f93f154a6295490.js"
+            "__federation_expose_Module.45580c89adf6f1a3.js"
           ],
           "async": [
-            "vendors-node_modules_react_index_js.4c94149e61e1a736.js",
-            "vendors-node_modules_framer-motion_dist_es_index_mjs.f7b3d81c526964af.js"
+            "744.5c9b6e2d4b42c940.js",
+            "22.f173946ece6af45b.js"
           ]
         },
         "css": {
