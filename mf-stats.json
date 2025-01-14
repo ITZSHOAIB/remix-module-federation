@@ -1,15 +1,15 @@
 {
-  "id": "host",
-  "name": "host",
+  "id": "remote1",
+  "name": "remote1",
   "metaData": {
-    "name": "host",
+    "name": "remote1",
     "type": "app",
     "buildInfo": {
       "buildVersion": "0.0.0",
       "buildName": "@remix-module-federation/source"
     },
     "remoteEntry": {
-      "name": "",
+      "name": "remoteEntry.js",
       "path": "",
       "type": "global"
     },
@@ -19,11 +19,38 @@
       "zip": "",
       "api": ""
     },
-    "globalName": "host",
+    "globalName": "remote1",
     "pluginVersion": "0.7.6",
     "publicPath": "auto"
   },
   "shared": [
+    {
+      "singleton": true,
+      "requiredVersion": "^11.18.0",
+      "shareScope": "default",
+      "strictVersion": true,
+      "name": "framer-motion",
+      "version": "11.18.0",
+      "eager": false,
+      "id": "remote1:framer-motion",
+      "assets": {
+        "js": {
+          "async": [
+            "744.5c9b6e2d4b42c940.js"
+          ],
+          "sync": [
+            "22.f173946ece6af45b.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      },
+      "usedIn": [
+        "./Module"
+      ]
+    },
     {
       "singleton": true,
       "requiredVersion": "18.3.1",
@@ -32,39 +59,14 @@
       "name": "react-dom",
       "version": "18.3.1",
       "eager": false,
-      "id": "host:react-dom",
+      "id": "remote1:react-dom",
       "assets": {
         "js": {
           "async": [
-            "744.e4a2aaa431cdad95.js"
+            "744.5c9b6e2d4b42c940.js"
           ],
           "sync": [
-            "89.4c729c8c2e8274da.js"
-          ]
-        },
-        "css": {
-          "async": [],
-          "sync": []
-        }
-      },
-      "usedIn": []
-    },
-    {
-      "singleton": true,
-      "requiredVersion": "6.11.2",
-      "shareScope": "default",
-      "strictVersion": true,
-      "name": "react-router-dom",
-      "version": "6.11.2",
-      "eager": false,
-      "id": "host:react-router-dom",
-      "assets": {
-        "js": {
-          "async": [
-            "744.e4a2aaa431cdad95.js"
-          ],
-          "sync": [
-            "212.edfd039a5b8817ea.js"
+            "89.db52d3576422a055.js"
           ]
         },
         "css": {
@@ -82,12 +84,12 @@
       "name": "react",
       "version": "18.3.1",
       "eager": false,
-      "id": "host:react",
+      "id": "remote1:react",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "744.e4a2aaa431cdad95.js"
+            "744.5c9b6e2d4b42c940.js"
           ]
         },
         "css": {
@@ -95,30 +97,37 @@
           "sync": []
         }
       },
-      "usedIn": []
+      "usedIn": [
+        "./Module"
+      ]
     }
   ],
-  "remotes": [
+  "remotes": [],
+  "exposes": [
     {
-      "alias": "remote1",
-      "consumingFederationContainerName": "host",
-      "federationContainerName": "remote1",
-      "moduleName": "Module",
-      "usedIn": [
-        "src/bootstrap.tsx + 3 modules"
+      "path": "./Module",
+      "id": "remote1:Module",
+      "name": "Module",
+      "requires": [
+        "react",
+        "framer-motion"
       ],
-      "entry": "http://localhost:4201/remoteEntry.js"
-    },
-    {
-      "alias": "remote2",
-      "consumingFederationContainerName": "host",
-      "federationContainerName": "remote2",
-      "moduleName": "Module",
-      "usedIn": [
-        "src/bootstrap.tsx + 3 modules"
-      ],
-      "entry": "http://localhost:4202/remoteEntry.js"
+      "file": "src\\remote-entry.ts",
+      "assets": {
+        "js": {
+          "sync": [
+            "__federation_expose_Module.45580c89adf6f1a3.js"
+          ],
+          "async": [
+            "744.5c9b6e2d4b42c940.js",
+            "22.f173946ece6af45b.js"
+          ]
+        },
+        "css": {
+          "sync": [],
+          "async": []
+        }
+      }
     }
-  ],
-  "exposes": []
+  ]
 }
