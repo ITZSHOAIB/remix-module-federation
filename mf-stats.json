@@ -36,10 +36,10 @@
       "assets": {
         "js": {
           "async": [
-            "744.e4a2aaa431cdad95.js"
+            "vendors-node_modules_react_index_js.ee1106648c2c2133.js"
           ],
           "sync": [
-            "89.4c729c8c2e8274da.js"
+            "vendors-node_modules_react-dom_index_js.3ea2a103aa73e958.js"
           ]
         },
         "css": {
@@ -61,10 +61,10 @@
       "assets": {
         "js": {
           "async": [
-            "744.e4a2aaa431cdad95.js"
+            "vendors-node_modules_react_index_js.ee1106648c2c2133.js"
           ],
           "sync": [
-            "212.edfd039a5b8817ea.js"
+            "vendors-node_modules_react-router-dom_dist_index_js.1015ef07fab83293.js"
           ]
         },
         "css": {
@@ -87,7 +87,7 @@
         "js": {
           "async": [],
           "sync": [
-            "744.e4a2aaa431cdad95.js"
+            "vendors-node_modules_react_index_js.ee1106648c2c2133.js"
           ]
         },
         "css": {
@@ -105,7 +105,7 @@
       "federationContainerName": "remote1",
       "moduleName": "Module",
       "usedIn": [
-        "src/bootstrap.tsx + 3 modules"
+        "src/app/app.tsx"
       ],
       "entry": "http://localhost:4201/remoteEntry.js"
     },
@@ -115,7 +115,7 @@
       "federationContainerName": "remote2",
       "moduleName": "Module",
       "usedIn": [
-        "src/bootstrap.tsx + 3 modules"
+        "src/app/app.tsx"
       ],
       "entry": "http://localhost:4202/remoteEntry.js"
     }

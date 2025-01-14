@@ -34,10 +34,10 @@
       "assets": {
         "js": {
           "async": [
-            "744.5aa00c5439d4f18d.js"
+            "vendors-node_modules_react_index_js.b722ee6f0518b792.js"
           ],
           "sync": [
-            "22.1fa151482a9c6ef4.js"
+            "vendors-node_modules_framer-motion_dist_es_index_mjs.80f288ec3683eeff.js"
           ]
         },
         "css": {
@@ -55,10 +55,10 @@
       "assets": {
         "js": {
           "async": [
-            "744.5aa00c5439d4f18d.js"
+            "vendors-node_modules_react_index_js.b722ee6f0518b792.js"
           ],
           "sync": [
-            "89.e059802a4fcdb94a.js"
+            "vendors-node_modules_react-dom_index_js.6686a583981add64.js"
           ]
         },
         "css": {
@@ -77,7 +77,7 @@
         "js": {
           "async": [],
           "sync": [
-            "744.5aa00c5439d4f18d.js"
+            "vendors-node_modules_react_index_js.b722ee6f0518b792.js"
           ]
         },
         "css": {
@@ -95,16 +95,18 @@
       "assets": {
         "js": {
           "sync": [
-            "__federation_expose_Module.6b8d49c2b9ee52ea.js"
+            "vendors-node_modules_react_jsx-dev-runtime_js.83d068496a6a4051.js",
+            "src_app_app_tsx.8b2058d992313fe8.js",
+            "__federation_expose_Module.fee5ae7270550546.js"
           ],
           "async": [
-            "744.5aa00c5439d4f18d.js",
-            "22.1fa151482a9c6ef4.js"
+            "vendors-node_modules_react_index_js.b722ee6f0518b792.js",
+            "vendors-node_modules_framer-motion_dist_es_index_mjs.80f288ec3683eeff.js"
           ]
         },
         "css": {
           "sync": [
-            "__federation_expose_Module.css"
+            "src_app_app_tsx.css"
           ],
           "async": []
         }
