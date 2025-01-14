@@ -21,7 +21,7 @@
     },
     "globalName": "host",
     "pluginVersion": "0.7.6",
-    "publicPath": "auto",
+    "publicPath": "https://ITZSHOAIB.github.io/remix-module-federation/",
     "prefetchInterface": false
   },
   "shared": [
