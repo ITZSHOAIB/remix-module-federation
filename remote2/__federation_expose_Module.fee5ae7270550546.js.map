@@ -1,1 +1,0 @@
-{"version":3,"file":"__federation_expose_Module.fee5ae7270550546.js","sources":["webpack://remote2/./src/remote-entry.ts"],"sourcesContent":["export { default } from './app/app';\r\n"],"names":["default"],"mappings":";;;;;;;;;AAAoC"}
